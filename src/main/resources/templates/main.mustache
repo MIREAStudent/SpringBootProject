@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    alert("Вы зашли на главную страницу, вам необходимо ввести логин и пароль");
+    console.log("chek console");
+</script>
+<p>Enter loin</p>
+<input type="text" id="log" value="{{login}}">
+<p>Enter password</p>
+<input type="text" id="pass" value="{{password}}">
+
+<script>
+    var password = document.querySelector('#pass');
+    if(password.value.length < 6)
+        alert("Пароль должен содержать больше 6-ти символов");
+</script>
+
+
+</body>
+</html>
